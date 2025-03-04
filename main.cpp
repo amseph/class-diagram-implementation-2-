@@ -6,7 +6,7 @@
 using namespace std;
 
 
-class Customer{
+class Customer{ // CUSTOMER CLASS
 private: 
     string customerName;
     string email; 
@@ -23,7 +23,7 @@ public:
     }
 };
 
-class Product {
+class Product {  //PRODUCT CLASS
 private:
     int productID;
     string name;
@@ -37,7 +37,7 @@ public:
     double getPrice() const { return price; }
 };
 
-class ShoppingCart {
+class ShoppingCart {  //SHOPPING CART CLASS
 private:
     vector<pair<Product, int>> products;
 
@@ -76,7 +76,7 @@ public:
     bool isEmpty() const { return products.empty(); }
 };
 
-class Order {
+class Order {  // ORDER CLASS
 private:
     int orderID;
     ShoppingCart cart;
